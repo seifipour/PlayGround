@@ -4,26 +4,26 @@ namespace CodeCrack.src.linkedlist
 {
     public class ReverseOrder
     {
-        public static void Main(string[] args)
-        {
+        //public static void Main(string[] args)
+        //{
 
-            var linked_list = new LinkedList<int>();
-            linked_list.append(1);
-            linked_list.append(2);
-            linked_list.append(3);
-            linked_list.append(4);
+        //    var linked_list = new LinkedList<int>();
+        //    linked_list.append(1);
+        //    linked_list.append(2);
+        //    linked_list.append(3);
+        //    linked_list.append(4);
 
-            var head = linked_list.head;
-            var nodes = print_revers_order(head);
+        //    var head = linked_list.head;
+        //    var nodes = print_revers_order(head);
 
-            while (nodes != null)
-            {
-                Console.WriteLine(string.Join(" ", nodes.data));
-                nodes = nodes.next;
-            }
+        //    while (nodes != null)
+        //    {
+        //        Console.WriteLine(string.Join(" ", nodes.data));
+        //        nodes = nodes.next;
+        //    }
 
-            Console.ReadLine();
-        }
+        //    Console.ReadLine();
+        //}
 
         public static Node<int> print_revers_order(Node<int> current) {
 

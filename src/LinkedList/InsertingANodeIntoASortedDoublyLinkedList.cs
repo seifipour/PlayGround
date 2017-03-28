@@ -5,27 +5,27 @@ namespace CodeCrack.src.linkedlist
     public class InsertingANodeIntoASortedDoublyLinkedList
     {
 
-        public static void Main(string[] args)
-        {
+        //public static void Main(string[] args)
+        //{
 
-            var linked_list = new LinkedList<int>();
-            linked_list.append(3);
-            linked_list.append(4);
-            linked_list.append(6);
+        //    var linked_list = new LinkedList<int>();
+        //    linked_list.append(3);
+        //    linked_list.append(4);
+        //    linked_list.append(6);
 
-            var result = inserting_a_node_into_a_sorted_doubly_linkedlist(
-                           linked_list.head,
-                           7
-                         );
+        //    var result = inserting_a_node_into_a_sorted_doubly_linkedlist(
+        //                   linked_list.head,
+        //                   7
+        //                 );
 
-            while (result != null)
-            {
+        //    while (result != null)
+        //    {
 
-                Console.WriteLine(result.data);
-                result = result.next;
-            }
-            Console.ReadLine();
-        }
+        //        Console.WriteLine(result.data);
+        //        result = result.next;
+        //    }
+        //    Console.ReadLine();
+        //}
 
         public static Node<int> inserting_a_node_into_a_sorted_doubly_linkedlist
                                 ( Node<int> head

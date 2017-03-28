@@ -5,25 +5,25 @@ namespace CodeCrack.src.linkedlist
 {
     public class DeleteDuplicateValueNodesFromASortedLinkedList
     {
-        public static void Main(string[] args)
-        {
+        //public static void Main(string[] args)
+        //{
 
-            var linked_list = new LinkedList<int>();
-            linked_list.append(3);
-            linked_list.append(6);
-            linked_list.append(6);
-            linked_list.append(5);
+        //    var linked_list = new LinkedList<int>();
+        //    linked_list.append(3);
+        //    linked_list.append(6);
+        //    linked_list.append(6);
+        //    linked_list.append(5);
 
-            var result = delete_duplicate_value_nodes_from_a_sorted_linkedlist(linked_list.head);
+        //    var result = delete_duplicate_value_nodes_from_a_sorted_linkedlist(linked_list.head);
 
-            while (result != null)
-            {
-                Console.Write(result.data);
-                result = result.next;
-            }
+        //    while (result != null)
+        //    {
+        //        Console.Write(result.data);
+        //        result = result.next;
+        //    }
 
-            Console.Read();
-        }
+        //    Console.Read();
+        //}
 
         public static Node<int> delete_duplicate_value_nodes_from_a_sorted_linkedlist(Node<int> head) {
 

@@ -5,27 +5,27 @@ namespace CodeCrack.src.linkedlist
     public class ReverseADoublyLinkedList
     {
 
-        public static void Main(string[] args)
-        {
+        //public static void Main(string[] args)
+        //{
 
-            var linked_list_A = new LinkedList<int>();
-            linked_list_A.append(1);
-            linked_list_A.append(2);
-            linked_list_A.append(3);
-            linked_list_A.append(4);
-            linked_list_A.append(5);
+        //    var linked_list_A = new LinkedList<int>();
+        //    linked_list_A.append(1);
+        //    linked_list_A.append(2);
+        //    linked_list_A.append(3);
+        //    linked_list_A.append(4);
+        //    linked_list_A.append(5);
 
-            var result = reverse_a_doubly_linkedList(linked_list_A.head);
+        //    var result = reverse_a_doubly_linkedList(linked_list_A.head);
 
-            while (result != null)
-            {
-                Console.WriteLine(result.data);
-                result = result.next;
-            }
+        //    while (result != null)
+        //    {
+        //        Console.WriteLine(result.data);
+        //        result = result.next;
+        //    }
 
-            Console.ReadLine();
+        //    Console.ReadLine();
 
-        }
+        //}
 
         public static Node<int> reverse_a_doubly_linkedList(Node<int> head) {
 

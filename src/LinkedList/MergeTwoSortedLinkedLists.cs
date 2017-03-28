@@ -4,33 +4,33 @@ namespace CodeCrack.src.linkedlist
 {
     public class MergeTwoSortedLinkedLists
     {
-        public static void Main(string[] arg)
-        {
+        //public static void Main(string[] arg)
+        //{
 
-            var linked_list_A = new LinkedList<int>();
-            linked_list_A.append(3);
-            linked_list_A.append(6);
-            linked_list_A.append(5);
+        //    var linked_list_A = new LinkedList<int>();
+        //    linked_list_A.append(3);
+        //    linked_list_A.append(6);
+        //    linked_list_A.append(5);
 
-            var linked_list_B = new LinkedList<int>();
-            linked_list_B.append(1);
-            linked_list_B.append(2);
-            linked_list_B.append(4);
+        //    var linked_list_B = new LinkedList<int>();
+        //    linked_list_B.append(1);
+        //    linked_list_B.append(2);
+        //    linked_list_B.append(4);
 
-            var result = merge_two_sorted_linked_list(
-                               linked_list_A.head,
-                               linked_list_B.head
-                         );
+        //    var result = merge_two_sorted_linked_list(
+        //                       linked_list_A.head,
+        //                       linked_list_B.head
+        //                 );
 
-            while (result != null)
-            {
-                Console.WriteLine(result.data);
-                result = result.next;
-            }
+        //    while (result != null)
+        //    {
+        //        Console.WriteLine(result.data);
+        //        result = result.next;
+        //    }
 
-            Console.ReadLine();
+        //    Console.ReadLine();
 
-        }
+        //}
         public static Node<int> merge_two_sorted_linked_list
                                     ( Node<int> nodes_A
                                     , Node<int> nodes_B ) {

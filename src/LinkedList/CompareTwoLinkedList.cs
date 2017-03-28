@@ -4,30 +4,30 @@ namespace CodeCrack.src.linkedlist
 
     public class CompareTwoLinkedList
     {
-        public static void Main(string[] args)
-        {
+        //public static void Main(string[] args)
+        //{
 
-            var linked_list_A = new LinkedList<int>();
-            linked_list_A.append(1);
-            linked_list_A.append(2);
-            linked_list_A.append(3);
-            linked_list_A.append(4);
+        //    var linked_list_A = new LinkedList<int>();
+        //    linked_list_A.append(1);
+        //    linked_list_A.append(2);
+        //    linked_list_A.append(3);
+        //    linked_list_A.append(4);
 
-            var linked_list_B = new LinkedList<int>();
-            linked_list_B.append(1);
-            linked_list_B.append(2);
-            linked_list_B.append(7);
-            linked_list_B.append(4);
+        //    var linked_list_B = new LinkedList<int>();
+        //    linked_list_B.append(1);
+        //    linked_list_B.append(2);
+        //    linked_list_B.append(7);
+        //    linked_list_B.append(4);
 
-            var result = copmare_two_linked_list_recursion(
-                             linked_list_A.head,
-                             linked_list_B.head
-                        );
+        //    var result = copmare_two_linked_list_recursion(
+        //                     linked_list_A.head,
+        //                     linked_list_B.head
+        //                );
 
-            Console.WriteLine(result);
-            Console.Read();
+        //    Console.WriteLine(result);
+        //    Console.Read();
 
-        }
+        //}
 
         public static int copmare_two_linked_list( Node<int> first, Node<int> second) {
 

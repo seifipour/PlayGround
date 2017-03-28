@@ -4,29 +4,29 @@ namespace CodeCrack.src.linkedlist
 {
     public class FindMergePointOfTwoLists
     {
-        public static void Main(string[] args)
-        {
+        //public static void Main(string[] args)
+        //{
 
-            var linked_list_merg_point = new LinkedList<int>();
-            linked_list_merg_point.append(3);
-            linked_list_merg_point.append(4);
+        //    var linked_list_merg_point = new LinkedList<int>();
+        //    linked_list_merg_point.append(3);
+        //    linked_list_merg_point.append(4);
 
-            var linked_list_A = new LinkedList<int>();
-            linked_list_A.append(1);
-            linked_list_A.append(2);
-            linked_list_A.tail.next = linked_list_merg_point.head;
+        //    var linked_list_A = new LinkedList<int>();
+        //    linked_list_A.append(1);
+        //    linked_list_A.append(2);
+        //    linked_list_A.tail.next = linked_list_merg_point.head;
 
-            var linked_list_B = new LinkedList<int>();
-            linked_list_B.append(6);
-            linked_list_B.append(7);
-            linked_list_B.tail.next = linked_list_merg_point.head;
+        //    var linked_list_B = new LinkedList<int>();
+        //    linked_list_B.append(6);
+        //    linked_list_B.append(7);
+        //    linked_list_B.tail.next = linked_list_merg_point.head;
 
-            var node_data = return_result(linked_list_A.head, linked_list_B.head);
+        //    var node_data = return_result(linked_list_A.head, linked_list_B.head);
 
-            Console.WriteLine(node_data);
-            Console.ReadLine();
+        //    Console.WriteLine(node_data);
+        //    Console.ReadLine();
 
-        }
+        //}
 
         public static int return_result( Node<int> listA
                                        , Node<int> listB )

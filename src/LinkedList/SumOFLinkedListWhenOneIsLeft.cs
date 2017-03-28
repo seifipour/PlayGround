@@ -7,35 +7,35 @@ namespace CodeCrack.src.linkedlist
 
         //left 1 7 8 3 right
         //left 0 0 6 9  right
-        public static void Main(string[] args)
-        {
+        //public static void Main(string[] args)
+        //{
 
-            var new_linked_list = new LinkedList<int>();
-            var first = new LinkedList<int>();
-            first.append(3);
-            first.append(8);
-            first.append(7);
-            first.append(1);
+        //    var new_linked_list = new LinkedList<int>();
+        //    var first = new LinkedList<int>();
+        //    first.append(3);
+        //    first.append(8);
+        //    first.append(7);
+        //    first.append(1);
 
-            var second = new LinkedList<int>();
-            second.append(9);
-            second.append(6);
+        //    var second = new LinkedList<int>();
+        //    second.append(9);
+        //    second.append(6);
 
-            var result_for_return_recursion = sum_of_two_linked_list_when_ones_is_left_with_return_recursion(
-                                                 first,
-                                                 second
-                                             );
+        //    var result_for_return_recursion = sum_of_two_linked_list_when_ones_is_left_with_return_recursion(
+        //                                         first,
+        //                                         second
+        //                                     );
 
-            while (result_for_return_recursion.head.next != null)
-            {
+        //    while (result_for_return_recursion.head.next != null)
+        //    {
 
-                Console.WriteLine(result_for_return_recursion.head.data);
+        //        Console.WriteLine(result_for_return_recursion.head.data);
 
-                result_for_return_recursion.head = result_for_return_recursion.head.next;
-            }
+        //        result_for_return_recursion.head = result_for_return_recursion.head.next;
+        //    }
 
-            Console.ReadLine();
-        }
+        //    Console.ReadLine();
+        //}
 
         public static LinkedList<int> sum_of_two_linked_list_when_ones_is_left_with_return_recursion
                                        ( LinkedList<int> first

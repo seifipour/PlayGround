@@ -4,20 +4,20 @@ namespace CodeCrack.src.linkedlist
 {
     public class GetNodeValue
    {
-        public static void Main(string[] args)
-        {
+        //public static void Main(string[] args)
+        //{
 
-            var linked_list = new LinkedList<int>();
-            linked_list.append(3);
-            linked_list.append(6);
-            linked_list.append(5);
+        //    var linked_list = new LinkedList<int>();
+        //    linked_list.append(3);
+        //    linked_list.append(6);
+        //    linked_list.append(5);
 
-            // position start from 0 
-            var result = get_node_value(linked_list.head, 2);
+        //    // position start from 0 
+        //    var result = get_node_value(linked_list.head, 2);
 
-            Console.WriteLine(result);
-            Console.Read();
-        }
+        //    Console.WriteLine(result);
+        //    Console.Read();
+        //}
 
         public static int get_node_value(Node<int> head, int position_from_tail) {
 
