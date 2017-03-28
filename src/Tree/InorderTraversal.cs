@@ -5,22 +5,22 @@ namespace CrackingCode.src.Tree
 {
     public static class InorderTraversal
     {
-        private static StringBuilder result = new StringBuilder();
+    /*          50
+     *         /  \
+     *        30   60
+     *       /  \   \
+     *      20  40   70
+     *                \ 
+     *                 80
+     */
         public static string print_inorder_traversal(Tree<int> root)
         {
-            if (root == null) return result.ToString();
-
-            if (root.left != null) {
-                print_inorder_traversal(root.left);
-            }
-            result.Append(root.data + " ");
-
-            if (root.right != null)
-            {
-                print_inorder_traversal(root.right);
-            }
-
-            return result.ToString();
+            var result = string.Empty;
+           if (root == null) return result;
+            result +=  print_inorder_traversal(root.left);
+            result += root.data.ToString()+" "; 
+            result += print_inorder_traversal(root.right);
+            return result;
         }
 
     }

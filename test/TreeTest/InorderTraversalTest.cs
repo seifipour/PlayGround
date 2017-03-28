@@ -23,10 +23,10 @@ namespace CrackingCode.test.TreeTest
 
             var result = InorderTraversal.print_inorder_traversal(BST.root);
 
-            var expected_result = "20 30 40 50 60 70 80";
+            var expected_result = "20 30 40 50 60 70 80 ";
 
             //assert
-            Assert.AreEqual(result, expected_result);
+            Assert.AreEqual(expected_result, result);
 
         }
     }

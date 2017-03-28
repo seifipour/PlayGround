@@ -5,23 +5,23 @@ namespace CrackingCode.src.Tree
 {
     public static class PreorderTraversal
     {
-        private static  StringBuilder string_builder= new StringBuilder();
-        public static string print_preorder_traversal(Tree<int> tree) {
+     /*          50
+     *         /  \
+     *        30   60
+     *       /  \   \
+     *      20  40   70
+     *                \ 
+     *                 80
+     */
+        public static string print_preorder_traversal(Tree<int> root) {
+            string result= string.Empty;
+            if (root == null) return result;
 
-            if (tree != null) {
+            result += root.data + " ";
+            result += print_preorder_traversal(root.left);
+            result += print_preorder_traversal(root.right);
 
-                string_builder.Append(tree.data + " ");
-            }
-            if (tree.left != null)
-            {
-                print_preorder_traversal(tree.left);
-            }
-            if (tree.right != null)
-            {
-                print_preorder_traversal(tree.right);
-            }
-
-            return string_builder.ToString();
+            return result;
         }
     }
 }

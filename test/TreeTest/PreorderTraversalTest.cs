@@ -25,10 +25,10 @@ namespace CrackingCode.test.Tree
 
             var result = PreorderTraversal.print_preorder_traversal(binary_search_tree.root);
 
-            var expected_result = "50 30 20 40 60 70 80";
+            var expected_result = "50 30 20 40 60 70 80 ";
             // assert 
 
-            Assert.AreEqual(result, expected_result);
+            Assert.AreEqual(expected_result,result);
 
         }
 

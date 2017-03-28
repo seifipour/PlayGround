@@ -5,23 +5,24 @@ namespace CrackingCode.src.Tree
 {
     public static class PostorderTraversal
     {
-        public static string print_post_order_traversal( Tree<int> root
-                                                       , StringBuilder string_builder)
+     /*          50
+     *         /  \
+     *        30   60
+     *       /  \   \
+     *      20  40   70
+     *                \ 
+     *                 80
+     */
+        public static string print_post_order_traversal( Tree<int> root)
         {
-            if (root == null) return string_builder.ToString();
+            var result = string.Empty;
+            if (root == null) return result;
 
-            if (root.left != null)
-            {
-                print_post_order_traversal(root.left ,string_builder);
-            }
-            if (root.right != null)
-            {
-                print_post_order_traversal(root.right,string_builder);
-            }
+              result += print_post_order_traversal(root.left );
+              result += print_post_order_traversal(root.right);
+              result += root.data+" ";
 
-            string_builder.Append(root.data+" ");
-
-            return string_builder.ToString();
+            return result;
 
         }
     }

@@ -24,11 +24,11 @@ namespace CrackingCode.test.TreeTest
             BST.insert(20);
             var SB = new StringBuilder();
             //act
-            var result = PostorderTraversal.print_post_order_traversal(BST.root, SB);
+            var result = PostorderTraversal.print_post_order_traversal(BST.root);
 
-            var expected_result = "20 40 30 80 70 60 50";
+            var expected_result = "20 40 30 80 70 60 50 ";
             //assert
-            Assert.AreEqual( result, expected_result );
+            Assert.AreEqual(expected_result,result);
 
         }
     }
