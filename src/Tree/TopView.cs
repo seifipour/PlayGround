@@ -5,7 +5,15 @@ namespace CrackingCode.src.Tree
 {
     public static  class TopView
     {
-       public static string print_top_view_nodes_with_while_solution(Tree<int> root) {
+       /*         50
+       *         /   \
+       *        30    60
+       *       /  \   / \
+       *      20  40 55  70
+       *                  \ 
+       *                  80
+       */
+        public static string print_top_view_nodes_with_while_solution(Tree<int> root) {
 
             var root_right = root;
             var root_left = root;
@@ -59,7 +67,7 @@ namespace CrackingCode.src.Tree
             return result;
         }
 
-        public static string side_value_for_left(Tree<int> root) {
+        private static string side_value_for_left(Tree<int> root) {
 
             string result = string.Empty;
             if (root == null) return result;
@@ -69,7 +77,7 @@ namespace CrackingCode.src.Tree
             return result;
         }
 
-        public static string side_value_for_right(Tree<int> root)
+        private static string side_value_for_right(Tree<int> root)
         {
 
             string result = string.Empty;
