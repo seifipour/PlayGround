@@ -7,6 +7,14 @@ namespace CrackingCode.test.TreeTest
     [TestClass]
     public class LevelOrderTraversalTest
     {
+        /*         50        level 1
+        *         /   \
+        *        30   60     level 2
+        *       /  \    \
+        *      20  40    70  level 3
+        *                  \ 
+        *                  80* level 4 
+        */
         [TestMethod]
         public void print_level_order_traversal()
         {

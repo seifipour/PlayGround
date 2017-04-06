@@ -5,31 +5,31 @@ namespace CodeCrack.src.linkedlist
     public class SumOFLinkedListWhenOneIsRight
     {
 
-        public static void Main(string[] args)
-        {
-            var first = new LinkedList<int>();
-            first.append(1);
-            first.append(1);
-            first.append(0);
+        //public static void Main(string[] args)
+        //{
+        //    var first = new LinkedList<int>();
+        //    first.append(1);
+        //    first.append(1);
+        //    first.append(0);
 
-            var second = new LinkedList<int>();
-            second.append(2);
-            second.append(2);
-            second.append(0);
+        //    var second = new LinkedList<int>();
+        //    second.append(2);
+        //    second.append(2);
+        //    second.append(0);
 
-            var result = sum_of_two_linked_list_when_ones_in_right_return_recursion(
-                            first,
-                            second
-                         );
-            while (result.head != null)
-            {
-                Console.WriteLine(result.head.data);
+        //    var result = sum_of_two_linked_list_when_ones_in_right_return_recursion(
+        //                    first,
+        //                    second
+        //                 );
+        //    while (result.head != null)
+        //    {
+        //        Console.WriteLine(result.head.data);
 
-                result.head = result.head.next;
-            }
+        //        result.head = result.head.next;
+        //    }
 
-            Console.ReadLine();
-        }
+        //    Console.ReadLine();
+        //}
 
 
         public static LinkedList<int> sum_of_two_linked_list_when_ones_in_right_return_recursion
