@@ -22,7 +22,7 @@ namespace CrackingCode.src.Tree
 
             if (root == null) return result;
             
-            var set_result = levelOrderLeft(root,1, new Dictionary<int, List<int>>());
+            var set_result = levelOrder(root,1, new Dictionary<int, List<int>>());
 
             set_result.OrderBy(x => x.Key);
 
@@ -33,9 +33,9 @@ namespace CrackingCode.src.Tree
 
             return result; 
         }
-        public static Dictionary<int,List<int>> levelOrderLeft(Tree<int> root
-                                                              , int level 
-                                                              , Dictionary<int , List<int>> result)
+        public static Dictionary<int,List<int>> levelOrder(Tree<int> root
+                                                          , int level 
+                                                          , Dictionary<int , List<int>> result)
         {
             if (root == null) return result;
 
@@ -43,8 +43,8 @@ namespace CrackingCode.src.Tree
                 result.Add(level, new List<int>());
             }
             result.FirstOrDefault(x => x.Key == level).Value.Add(root.data);
-            result = levelOrderLeft(root.left,level+1, result);
-            result=  levelOrderLeft(root.right,level+1,result);
+            result = levelOrder(root.left,level+1, result);
+            result=  levelOrder(root.right,level+1,result);
             
             return result;
         }

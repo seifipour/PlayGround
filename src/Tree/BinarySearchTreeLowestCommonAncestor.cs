@@ -22,23 +22,20 @@ namespace CrackingCode.src.Tree
         {
             var result = 0;
             if (root == null) return result;
-            
-            if (root.data > Math.Max(first_val, second_val))
+
+            var max = Math.Max(first_val, second_val);
+            var min = Math.Min(first_val, second_val);
+
+            if (root.data <= max && root.data >= min)
             {
-               result= binary_search_tree_lowest_common_ancestor(root.left, first_val, second_val);
-            }
-            else if (root.data < Math.Min(first_val, second_val))
-            {
-               result =  binary_search_tree_lowest_common_ancestor(root.right, first_val, second_val);
+                return root.data;
             }
             else {
-                result=root.data;
+
+                Tree<int> next = (root.data > max) ? root.left : root.right;
+                return binary_search_tree_lowest_common_ancestor(next, first_val, second_val);
             }
 
-            return result;
         }
-
     }
-
-      
 }
