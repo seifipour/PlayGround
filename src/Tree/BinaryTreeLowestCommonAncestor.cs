@@ -4,6 +4,14 @@ namespace CrackingCode.src.Tree
 {
     public static  class BinaryTreeLowestCommonAncestor
     {
+        /*          50
+        *         /  \
+        *        30   60
+        *       /  \   \
+        *      20  40   70
+        *                \ 
+        *                 80
+        */
         public static Tree<int> print_binary_tree_lowest_common_ancestore( Tree<int> root
                                                                          , int first_val
                                                                          , int second_val) {
