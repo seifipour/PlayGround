@@ -28,16 +28,13 @@ namespace CrackingCode.test.TreeTest
             BST.insert(30);
             BST.insert(60);
             BST.insert(20);
-          
             //act
 
             var result = IsThisABinarySearchTree
                         .is_this_binary_search_tree(BST.root);
 
-            var expected_result =false;
-
             //assert
-            Assert.AreEqual(result, expected_result);
+            Assert.AreEqual(result, false);
 
         }
     }
