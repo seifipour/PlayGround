@@ -40,9 +40,9 @@ namespace CrackingCode.src.Tree
 
             if (root == null) return result;
 
-            result = print_inorder(root.left,result);
+            result = print_inorder_traversal(root.left,result);
             result.Add(root.data);
-            result = print_inorder(root.right,result);
+            result = print_inorder_traversal(root.right,result);
 
             return result;
         }
